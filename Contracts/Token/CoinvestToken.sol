@@ -1,12 +1,12 @@
 pragma solidity ^0.4.18;
 /**
- * @title Coinvest Token
+ * @title Token launch for everybody
  * @dev Just a very straightforward ERC20 contract.
 **/
 
-contract CoinvestToken {
-    string public constant symbol = "COIN";
-    string public constant name = "Coinvest";
+contract Token {
+    string public constant symbol = "YOUR COIN";
+    string public constant name = "NAME YOUR COIN";
     
     // Storing small numbers is cheaper.
     uint public constant decimals = 18;
@@ -24,7 +24,7 @@ contract CoinvestToken {
     /**
      * @dev Set owner and beginning balance.
     **/
-    function CoinvestToken()
+    function Token()
       public
     {
         balances[msg.sender] = _totalSupply;
